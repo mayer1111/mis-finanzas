@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mis Finanzas Personales</title>
+<meta name="description" content="App para controlar tu sueldo, gastos, cuentas fijas, metas de ahorro e inversiones mes a mes. Tus datos quedan solo en tu teléfono.">
+<link rel="icon" href="icono.png">
+<style>
+:root{--bg:#EDF1EE;--card:#FFFFFF;--ink:#14221C;--muted:#5E6E66;--line:#D4DDD8;--accent:#1E5B43;--accent-soft:#DCEBE3}
+@media (prefers-color-scheme:dark){:root{--bg:#0D1512;--card:#16211C;--ink:#E4EEE8;--muted:#94A69D;--line:#28372F;--accent:#78C7A1;--accent-soft:#183329}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 system-ui,-apple-system,"Segoe UI",sans-serif}
+main{max-width:680px;margin:0 auto;padding:48px 20px 64px;display:flex;flex-direction:column;gap:28px}
+header{display:flex;align-items:center;gap:16px}
+header img{width:72px;height:72px;border-radius:18px;flex:none}
+h1{margin:0;font-size:28px;line-height:1.2;text-wrap:balance}
+header p{margin:4px 0 0;color:var(--muted)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px 22px}
+h2{margin:0 0 10px;font-size:18px}
+ul{margin:0;padding-left:20px;display:flex;flex-direction:column;gap:6px}
+.priv{background:var(--accent-soft);border-color:transparent}
+a{color:var(--accent);font-weight:600}
+footer{color:var(--muted);font-size:14px;display:flex;flex-wrap:wrap;gap:8px 18px}
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <img src="icono.png" alt="">
+    <div>
+      <h1>Mis Finanzas Personales</h1>
+      <p>Controla tu plata mes a mes: cuánto te queda, en qué se va y cuánto vas juntando.</p>
+    </div>
+  </header>
+
+  <section class="card">
+    <h2>Qué puedes hacer</h2>
+    <ul>
+      <li>Ver cuánto te queda para gastar este mes y cuánto puedes gastar por día.</li>
+      <li>Anotar gastos por categoría, con topes y aviso cuando llegas al 80%.</li>
+      <li>Llevar tus cuentas fijas, con recordatorio un día antes de que venzan.</li>
+      <li>Registrar suscripciones que se anotan solas cada mes.</li>
+      <li>Ver gráficos de a dónde va tu plata y comparar los últimos 6 meses.</li>
+      <li>Crear metas de ahorro y seguir tu cartera de inversiones, también en dólares.</li>
+      <li>Exportar tus movimientos a Excel.</li>
+    </ul>
+  </section>
+
+  <section class="card priv">
+    <h2>Tus datos son tuyos</h2>
+    <p style="margin:0">Todo lo que anotas se guarda solo en tu teléfono. No hay cuentas, publicidad ni rastreo. Puedes proteger la app con huella o Face ID y ocultar tu sueldo con un toque.</p>
+  </section>
+
+  <footer>
+    <a href="politica-privacidad.html">Política de privacidad</a>
+    <span>Contacto: nico.mayer.a@gmail.com</span>
+  </footer>
+</main>
+</body>
+</html>
